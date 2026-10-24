@@ -1,0 +1,34 @@
+---
+name: Bug report
+description: Report unexpected commit message generation
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: commit-name version
+      placeholder: 1.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: diff
+    attributes:
+      label: Diff or patch
+      description: Paste a minimal diff that produces the wrong suggestion.
+      render: diff
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected message
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual message
+    validations:
+      required: true
+---

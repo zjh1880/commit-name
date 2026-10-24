@@ -1,0 +1,19 @@
+diff --git a/src/api/users.js b/src/api/users.js
+new file mode 100644
+index 0000000..1234567
+--- /dev/null
++++ b/src/api/users.js
+@@ -0,0 +1,5 @@
++export function getUser(id) {
++  return { id };
++}
+diff --git a/tests/api/users.test.js b/tests/api/users.test.js
+new file mode 100644
+index 0000000..7654321
+--- /dev/null
++++ b/tests/api/users.test.js
+@@ -0,0 +1,4 @@
++import { getUser } from "../../src/api/users.js";
++test("gets a user", () => {
++  expect(getUser(1)).toEqual({ id: 1 });
++});

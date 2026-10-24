@@ -1,0 +1,43 @@
+{
+  "name": "commit-name",
+  "version": "1.1.0",
+  "description": "Generate conventional commit messages from git diffs.",
+  "license": "MIT",
+  "author": "Fast GitHub Labs",
+  "type": "commonjs",
+  "main": "src/commit-name.js",
+  "bin": {
+    "commit-name": "src/commit-name.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/commit-name.js && node --check tests/commit-name.test.js",
+    "ci": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjh1880/commit-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zjh1880/commit-name/issues"
+  },
+  "homepage": "https://github.com/zjh1880/commit-name#readme",
+  "files": [
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits",
+    "cli",
+    "developer-tools"
+  ]
+}
